@@ -1,0 +1,138 @@
+# ==========================================
+# SalonWeb Git Ignore Configuration
+# Ensures ONLY source code is committed to Git
+# ==========================================
+
+# --- Compiled Output & Build Artifacts ---
+target/
+build/
+bin/
+out/
+dist/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# --- Maven Wrapper & Cache ---
+.mvn/
+!.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# --- IDE & Editor Settings ---
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Other Editors & Backup files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# --- Environment & Secret Files ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+!.env.template
+application-secrets.yml
+application-secrets.properties
+application-local.properties
+application-local.yml
+*.pem
+*.key
+*.p12
+*.jks
+*.crt
+
+# --- Logs & Runtime Artifacts ---
+*.log
+logs/
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Document & Design Artifacts ---
+*.docx
+*.pdf
+*.xlsx
+*.pptx
+salon_build_plan.docx
+
+# --- Frontend Dependencies & Build Output (React / Vite / Node) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.vite/
+.next/
+.nuxt/
+
+# --- Python AI Service & Computer Vision Artifacts (Future Phases) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+*.pt
+*.pth
+*.onnx
+*.weights
+*.h5
+*.engine
+dataset/
+faces/
+captures/
+video_samples/
