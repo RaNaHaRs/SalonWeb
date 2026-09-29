@@ -136,3 +136,6 @@ dataset/
 faces/
 captures/
 video_samples/
+
+# Environment / secrets
+src/main/resources/application.properties
